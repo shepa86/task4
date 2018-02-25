@@ -1,0 +1,103 @@
+#wrapper {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 10px;
+	max-width: 960px;
+}
+
+#main {
+	background: #f9f9f9;
+	padding: 20px
+
+}
+
+h1{
+font: 700 22px/24px $base-font-serif;
+margin-bottom: 5px;
+}
+
+.btn {
+	@include animate(color background);
+	font-size: 13px;
+	line-height: 15px;
+	text-decoration: none;
+	padding: 16px 58px;
+	margin: 0 10px 10px 0;
+	color: $white;
+	background: $green;
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 3px;
+	border: none;
+	outline: 0;
+	text-transform: uppercase;
+
+	&:hover {
+		background: darken($green, 10%);
+	}
+}
+
+
+.slick-slider {
+	padding: 50px 0;
+	border-bottom: 2px solid $light-gray;
+	.latest-article {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+
+		.article-content,
+		.img-holder {
+			width: 50%;
+			padding: 15px;
+		}
+	}
+}
+
+.latest-article {
+	.title {
+		display: block;
+
+		a {
+			@include animate(color);
+
+			color: $black;
+			text-decoration: none;
+
+			&:hover {
+				color: lighten($black, 15%);
+			}
+		}
+	}
+}
+
+.blog-filter {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	margin: 0 -10px;
+	.col-3 {
+		width: 33.3%;
+		padding: 0 10px
+	}
+}
+
+article {
+	.title {
+		display: block;}
+		a {
+			@include animate(color);
+
+			color: $black;
+			text-decoration: none;
+
+			&:hover {
+				color: lighten($black, 15%);
+			}
+		}
+	}
