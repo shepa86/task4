@@ -580,6 +580,49 @@ input[type='submit'] {
 .slick-arrow.slick-hidden {
   display: none; }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.ttf?khy8vh") format("truetype"), url("../fonts/icomoon.woff?khy8vh") format("woff"), url("../fonts/icomoon.svg?khy8vh#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-mail-envelope-closed:before {
+  content: "\e904"; }
+
+.icon-chat:before {
+  content: "\e902"; }
+
+.icon-calendar:before {
+  content: "\e903"; }
+
+.icon-arrow_right:before {
+  content: "\e900"; }
+
+.icon-arrow_left:before {
+  content: "\e901"; }
+
+.icon-heart:before {
+  content: "\e9da"; }
+
+.icon-facebook:before {
+  content: "\ea90"; }
+
+.icon-twitter:before {
+  content: "\ea96"; }
+
 #wrapper {
   width: 100%;
   position: relative;
@@ -619,7 +662,8 @@ h1 {
 
 .slick-slider {
   padding: 50px 0;
-  border-bottom: 2px solid #e2e2e2; }
+  border-bottom: 2px solid #e2e2e2;
+  position: relative; }
   .slick-slider .latest-article {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -665,6 +709,40 @@ article a {
   text-decoration: none; }
   article a:hover {
     color: #595959; }
+
+.slick-arrow {
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #000;
+  font-size: 36px;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  outline: 0; }
+
+.slick-prev {
+  left: -50px; }
+
+.slick-next {
+  right: -50px; }
+
+.icon-arrow_right,
+.icon-arrow_left {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #f0f;
+  border-radius: 50%;
+  color: #fff; }
 
 #header {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.35);

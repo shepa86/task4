@@ -8,8 +8,8 @@ function initSlickCarousel() {
 	jQuery('.slick-slider').slick({
 		slidesToScroll: 1,
 		rows: 0,
-		prevArrow: '<button class="slick-prev">Previous</button>',
-		nextArrow: '<button class="slick-next">Next</button>',
+		prevArrow: '<button class="slick-prev"><span class="icon-arrow_left"></span></button>',
+		nextArrow: '<button class="slick-next"><span class="icon-arrow_right"></span></button>',
 		fade: true,
 		responsive: [{
 			breakpoint: 1024,

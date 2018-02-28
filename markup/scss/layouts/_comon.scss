@@ -17,8 +17,8 @@
 }
 
 h1{
-font: 700 22px/24px $base-font-serif;
-margin-bottom: 5px;
+	font: 700 22px/24px $base-font-serif;
+	margin-bottom: 5px;
 }
 
 .btn {
@@ -46,6 +46,7 @@ margin-bottom: 5px;
 .slick-slider {
 	padding: 50px 0;
 	border-bottom: 2px solid $light-gray;
+	position: relative;
 	.latest-article {
 		display: flex;
 		flex-wrap: wrap;
@@ -89,15 +90,52 @@ margin-bottom: 5px;
 
 article {
 	.title {
-		display: block;}
-		a {
-			@include animate(color);
+		display: block;
+	}
 
-			color: $black;
-			text-decoration: none;
+	a {
+		@include animate(color);
 
-			&:hover {
-				color: lighten($black, 15%);
-			}
+		color: $black;
+		text-decoration: none;
+
+		&:hover {
+			color: lighten($black, 15%);
 		}
 	}
+}
+
+.slick-arrow {
+	@include animate(color);
+
+	appearance: none;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	color: #000;
+	font-size: 36px;
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	transform: translateY(-50%);
+	outline: 0;
+}
+
+.slick-prev {
+	left: -50px;
+}
+
+.slick-next {
+	right: -50px;
+}
+
+.icon-arrow_right,
+.icon-arrow_left {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: #f0f;
+	border-radius: 50%;
+	color: $white;
+	
+}
